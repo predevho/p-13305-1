@@ -24,7 +24,7 @@ public class ArticleService {
         return articleRepository.findAll();
     }
 
-    public Optional<Article> articleDetail(Integer id) {
+    public Optional<Article> detailArticle(Integer id) {
         return articleRepository.findById(id);
     }
 }
