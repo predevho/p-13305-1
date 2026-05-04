@@ -21,12 +21,4 @@ public class Article {
     private String content;
 
     private LocalDateTime createDate;
-
-    public Article addArticle(String title, String content) {
-        Article article = new Article();
-        article.setTitle(title);
-        article.setContent(content);
-        article.setCreateDate(LocalDateTime.now());
-        return article;
-    }
 }

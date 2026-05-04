@@ -24,7 +24,7 @@ public class ArticleController {
 
    @PostMapping("/create")
     public String create(Article article) {
-        articleService.create(article);
+        articleService.create(article.getTitle(), article.getContent());
         return "redirect:/article/list";
     }
 
